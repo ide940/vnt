@@ -76,19 +76,19 @@ mipstype=$(echo -n I | hexdump -o 2>/dev/null | awk '{ print substr($2,6,1); exi
 fi
 
 case "${cpucore}" in 
-	"mipsle") curl -o "${vnt}" --connect-timeout 10 --retry 3 http://frp.104300.xyz:19213/vnt-cli_mipsle
+	"mipsle") curl -o "${vnt}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli_mipsle
 	;;
-	"mips")  curl -o "${vnt}" --connect-timeout 10 --retry 3 http://frp.104300.xyz:19213/vnt-cli_mips
+	"mips")  curl -o "${vnt}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli_mips
 	;;
-	"x86_64")  curl -o "${vnt}" --connect-timeout 10 --retry 3 http://frp.104300.xyz:19213/vnt-cli_x86_64
+	"x86_64")  curl -o "${vnt}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli_x86_64
 	;;
-	"i386")  curl -o "${vnt}" --connect-timeout 10 --retry 3 http://frp.104300.xyz:19213/vnt-cli_i386
+	"i386")  curl -o "${vnt}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli_i386
 	;;
-	"arm")  curl -o "${vnt}" --connect-timeout 10 --retry 3 http://frp.104300.xyz:19213/vnt-cli_arm
+	"arm")  curl -o "${vnt}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli_arm
 	;;
-	"armv7")  curl -o "${vnt}" --connect-timeout 10 --retry 3 http://frp.104300.xyz:19213/vnt-cli_armv7
+	"armv7")  curl -o "${vnt}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli_armv7
 	;;
-	"aarch64")  curl -o "${vnt}" --connect-timeout 10 --retry 3 http://frp.104300.xyz:19213/vnt-cli_aarch64
+	"aarch64")  curl -o "${vnt}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli_aarch64
 	;;
 esac
 ##判断CPU框架并下载对应的执行文件
