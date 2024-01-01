@@ -1,7 +1,8 @@
 #!/bin/sh
 #####使用方法
-##a在计划任务中添加*/1 * * * * sh -c "$(curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/tv/padanvanvnt.sh)" &
-##2在ssh终端或者在控制台中运行sh -c "$(curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/tv/padanvanvnt.sh)" &
+##a在计划任务中添加*/1 * * * * sh -c "$(curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt.sh)" &
+##2在ssh终端或者在控制台中运行curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt.sh | sh
+##2在ssh终端或者在控制台中运行sh -c "$(curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt.sh)" &
 ##3在计划任务中，修改你自己的！！
 
 os=`uname -a | tr [A-Z] [a-z]|grep -o wrt`
@@ -24,7 +25,7 @@ if [ ! -f "$vnt_cli_sh" ] ;then
  logger "vnt-cli.sh脚本安装中"
  fi
  
-curl -o "${vnt_cli_sh}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/tv/padanvanvnt-cli.sh
+curl -o "${vnt_cli_sh}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli.sh
 
 
 test ! -x "$vnt_cli_sh" && chmod +x "$vnt_cli_sh"
