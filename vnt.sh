@@ -1,8 +1,8 @@
 #!/bin/sh
 #####使用方法
-##a在计划任务中添加*/1 * * * * sh -c "$(curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt.sh)" &
-##2在ssh终端或者在控制台中运行curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt.sh | sh
-##2在ssh终端或者在控制台中运行sh -c "$(curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt.sh)" &
+##a在计划任务中添加*/1 * * * * sh -c "$(curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/main/vnt.sh)" &
+##2在ssh终端或者在控制台中运行curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/main/vnt.sh | sh
+##2在ssh终端或者在控制台中运行sh -c "$(curl https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/main/vnt.sh)" &
 ##3在计划任务中，修改你自己的！！
 
 os=`uname -a | tr [A-Z] [a-z]|grep -o wrt`
