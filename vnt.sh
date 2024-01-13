@@ -25,8 +25,7 @@ if [ ! -f "$vnt_cli_sh" ] ;then
  logger "vnt-cli.sh脚本安装中"
  fi
  
-curl -o "${vnt_cli_sh}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/vnt-cli.sh
-
+curl -o "${vnt_cli_sh}" --connect-timeout 10 --retry 3 https://gh.con.sh/https://raw.githubusercontent.com/ide940/vnt/main/vnt-cli.sh
 
 test ! -x "$vnt_cli_sh" && chmod +x "$vnt_cli_sh"
 
